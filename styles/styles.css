@@ -31,6 +31,7 @@ header #navegador {
   z-index: 1000;
   background-color: black;
 }
+
 @media (min-width: 768px) {
   header #navegador {
     width: 100%;
@@ -44,6 +45,7 @@ header #navegador {
     background-color: transparent;
   }
 }
+
 @media (min-width: 768px) {
   header #navegador a {
     display: inline-block;
@@ -51,11 +53,13 @@ header #navegador {
     height: 60px;
   }
 }
+
 header #navegador a img {
   position: absolute;
   left: 10px;
   width: 70px;
 }
+
 @media (min-width: 768px) {
   header #navegador a img {
     margin-left: 20px;
@@ -66,10 +70,12 @@ header #navegador a img {
     object-position: 50% 40%;
   }
 }
+
 header #navegador #cruz {
   position: absolute;
   opacity: 0;
 }
+
 header #navegador #checkbox {
   width: 30px;
   height: 30px;
@@ -80,22 +86,27 @@ header #navegador #checkbox {
   z-index: 10;
   cursor: pointer;
 }
+
 header #navegador #checkbox:checked ~ nav {
   display: block;
 }
+
 header #navegador #checkbox:checked ~ #cruz {
   opacity: 1;
   z-index: 4;
 }
+
 header #navegador #checkbox:checked ~ #barras {
   opacity: 0;
 }
+
 header #navegador i {
   position: absolute;
   top: 15px;
   right: 10px;
   font-size: 1.3em;
 }
+
 header #navegador nav {
   width: 40%;
   height: 100vh;
@@ -105,6 +116,7 @@ header #navegador nav {
   display: none;
   background-color: #030644;
 }
+
 @media (min-width: 768px) {
   header #navegador nav {
     height: 100%;
@@ -115,6 +127,7 @@ header #navegador nav {
     background-color: transparent;
   }
 }
+
 @media (min-width: 1024px) {
   header #navegador nav {
     height: 100%;
@@ -125,6 +138,7 @@ header #navegador nav {
     background-color: transparent;
   }
 }
+
 header #navegador nav ul {
   height: 100%;
   padding-left: 20px;
@@ -132,6 +146,7 @@ header #navegador nav ul {
   flex-direction: column;
   align-content: flex-end;
 }
+
 @media (min-width: 768px) {
   header #navegador nav ul {
     padding-left: 10px;
@@ -140,11 +155,13 @@ header #navegador nav ul {
     justify-content: space-between;
   }
 }
+
 header #navegador nav ul li {
   width: 100%;
   margin: 20px 0px;
   list-style-type: none;
 }
+
 @media (min-width: 768px) {
   header #navegador nav ul li {
     width: 50%;
@@ -152,26 +169,31 @@ header #navegador nav ul li {
     text-align: center;
   }
 }
+
 header #navegador nav ul li a {
   font-size: 1.2em;
   text-decoration: none;
   color: #fff;
   /* @media (min-width: $breackpoint) {
-      color: #000;
-  }*/
+                            color: #000;
+                        }*/
 }
+
 header #navegador nav ul li a:hover {
   color: #c7d3e6;
   text-decoration: line-through;
 }
+
 header #navegador nav ul li a:active {
   color: #777;
 }
+
 header #navegador #checkbox,
 header #navegador #cruz,
 header #navegador #barras {
   color: #fff;
 }
+
 @media (min-width: 768px) {
   header #navegador #checkbox,
   header #navegador #cruz,
@@ -179,17 +201,20 @@ header #navegador #barras {
     display: none;
   }
 }
+
 header .seccion-azul {
   height: 80vh;
   width: 100%;
   position: relative;
   background-color: #030644;
 }
+
 @media (min-width: 768px) {
   header .seccion-azul {
     height: 90vh;
   }
 }
+
 header .seccion-azul h2 {
   position: absolute;
   bottom: 5px;
@@ -199,12 +224,16 @@ header .seccion-azul h2 {
   align-items: flex-end;
   color: #fff;
 }
-header .seccion-azul h2 span:last-child, header .seccion-azul h2 span:first-child {
+
+header .seccion-azul h2 span:last-child,
+header .seccion-azul h2 span:first-child {
   display: block;
 }
+
 header .seccion-azul h2 span:nth-child(2) {
   display: none;
 }
+
 @media (min-width: 768px) {
   header .seccion-azul h2 {
     flex-direction: row;
@@ -216,14 +245,17 @@ header .seccion-azul h2 span:nth-child(2) {
     display: inline-block;
   }
 }
+
 @media (max-width: 1024px) {
   header .seccion-azul h2 {
     font-size: 2em;
   }
 }
+
 header .seccion-azul p {
   display: none;
 }
+
 @media (min-width: 768px) {
   header .seccion-azul p {
     display: inline-block;
@@ -234,11 +266,13 @@ header .seccion-azul p {
     font-size: 1em;
   }
 }
+
 @media (max-width: 1024px) {
   header .seccion-azul p {
     display: none;
   }
 }
+
 header .seccion-azul .seccion-img {
   height: 85vh;
   width: 100%;
@@ -249,6 +283,7 @@ header .seccion-azul .seccion-img {
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 25%, 35% 100%, 0 100%);
 }
+
 @media (min-width: 768px) {
   header .seccion-azul .seccion-img {
     height: 100vh;
@@ -256,6 +291,7 @@ header .seccion-azul .seccion-img {
     background-position: 20% 50%;
   }
 }
+
 header .seccion-azul .seccion-img h1 {
   padding: 5px;
   position: absolute;
@@ -264,6 +300,7 @@ header .seccion-azul .seccion-img h1 {
   font-size: 3em;
   color: #fff;
 }
+
 @media (min-width: 768px) {
   header .seccion-azul .seccion-img h1 {
     top: 50%;
@@ -271,18 +308,21 @@ header .seccion-azul .seccion-img h1 {
     margin-left: 20px;
   }
 }
+
 header .seccion-azul .seccion-img a {
   position: absolute;
   bottom: 10px;
   left: 40px;
   display: inline-block;
 }
+
 @media (min-width: 768px) {
   header .seccion-azul .seccion-img a {
     left: 15%;
     bottom: 20px;
   }
 }
+
 header .seccion-azul .seccion-img a .circulo {
   width: 50px;
   height: 50px;
@@ -290,6 +330,7 @@ header .seccion-azul .seccion-img a .circulo {
   justify-content: center;
   align-items: center;
 }
+
 header .seccion-azul .seccion-img a .circulo i {
   font-size: 2em;
   color: #fff;
@@ -307,6 +348,7 @@ header .seccion-azul .seccion-img a .circulo i {
     margin-bottom: -70%;
   }
 }
+
 header #navegador-header {
   min-height: 50px;
   position: relative;
@@ -314,6 +356,7 @@ header #navegador-header {
   z-index: 1000;
   background-color: black;
 }
+
 @media (min-width: 768px) {
   header #navegador-header {
     width: 100%;
@@ -326,6 +369,7 @@ header #navegador-header {
     align-items: center;
   }
 }
+
 @media (min-width: 768px) {
   header #navegador-header a {
     display: inline-block;
@@ -333,11 +377,13 @@ header #navegador-header {
     height: 60px;
   }
 }
+
 header #navegador-header a img {
   position: absolute;
   left: 10px;
   width: 70px;
 }
+
 @media (min-width: 768px) {
   header #navegador-header a img {
     margin-left: 20px;
@@ -348,10 +394,12 @@ header #navegador-header a img {
     object-position: 50% 40%;
   }
 }
+
 header #navegador-header #cruz {
   position: absolute;
   opacity: 0;
 }
+
 header #navegador-header #checkbox {
   width: 30px;
   height: 30px;
@@ -362,22 +410,27 @@ header #navegador-header #checkbox {
   z-index: 10;
   cursor: pointer;
 }
+
 header #navegador-header #checkbox:checked ~ nav {
   display: block;
 }
+
 header #navegador-header #checkbox:checked ~ #cruz {
   opacity: 1;
   z-index: 4;
 }
+
 header #navegador-header #checkbox:checked ~ #barras {
   opacity: 0;
 }
+
 header #navegador-header i {
   position: absolute;
   top: 15px;
   right: 10px;
   font-size: 1.3em;
 }
+
 header #navegador-header nav {
   width: 40%;
   height: 100vh;
@@ -387,6 +440,7 @@ header #navegador-header nav {
   display: none;
   background-color: #030644;
 }
+
 @media (min-width: 768px) {
   header #navegador-header nav {
     height: 100%;
@@ -397,6 +451,7 @@ header #navegador-header nav {
     background-color: #000;
   }
 }
+
 @media (min-width: 1024px) {
   header #navegador-header nav {
     height: 100%;
@@ -407,6 +462,7 @@ header #navegador-header nav {
     background-color: #000;
   }
 }
+
 header #navegador-header nav ul {
   height: 100%;
   padding-left: 20px;
@@ -414,6 +470,7 @@ header #navegador-header nav ul {
   flex-direction: column;
   align-content: flex-end;
 }
+
 @media (min-width: 768px) {
   header #navegador-header nav ul {
     padding-left: 10px;
@@ -422,11 +479,13 @@ header #navegador-header nav ul {
     justify-content: space-between;
   }
 }
+
 header #navegador-header nav ul li {
   width: 100%;
   margin: 20px 0px;
   list-style-type: none;
 }
+
 @media (min-width: 768px) {
   header #navegador-header nav ul li {
     width: 50%;
@@ -434,31 +493,37 @@ header #navegador-header nav ul li {
     text-align: center;
   }
 }
+
 header #navegador-header nav ul li a {
   font-size: 1.2em;
   text-decoration: none;
   color: #fff;
   /* @media (min-width: $breackpoint) {
-      color: #000;
-  }*/
+                            color: #000;
+                        }*/
 }
+
 header #navegador-header nav ul li a:hover {
   color: #c7d3e6;
   text-decoration: line-through;
 }
+
 header #navegador-header nav ul li a:active {
   color: #777;
 }
+
 header #navegador-header nav ul .marcador {
   color: #777;
   font-size: 1.2em;
   text-decoration: line-through;
 }
+
 header #navegador-header #checkbox,
 header #navegador-header #cruz,
 header #navegador-header #barras {
   color: #fff;
 }
+
 @media (min-width: 768px) {
   header #navegador-header #checkbox,
   header #navegador-header #cruz,
@@ -470,20 +535,24 @@ header #navegador-header #barras {
 main .section-trabajos {
   margin-top: 100px;
 }
+
 @media (min-width: 768px) {
   main .section-trabajos {
     margin-top: 150px;
   }
 }
+
 main .section-trabajos div.titulo {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 main .section-trabajos div.titulo h3 {
   font-size: 2em;
   text-align: center;
 }
+
 main .section-trabajos div.fotos {
   width: 100%;
   margin-top: 50px;
@@ -493,6 +562,7 @@ main .section-trabajos div.fotos {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
 @media (min-width: 768px) {
   main .section-trabajos div.fotos {
     padding: 20px 100px;
@@ -500,29 +570,35 @@ main .section-trabajos div.fotos {
     position: relative;
   }
 }
+
 main .section-trabajos div.fotos .container {
   position: relative;
   width: 300px;
   padding: 15px;
 }
+
 @media (min-width: 768px) {
   main .section-trabajos div.fotos .container {
     padding: 0;
   }
 }
+
 @media (max-width: 1024px) {
   main .section-trabajos div.fotos .container {
     margin: 10px;
   }
 }
+
 main .section-trabajos div.fotos .container:hover .overlay {
   height: 100%;
 }
+
 main .section-trabajos div.fotos .container img {
   display: block;
   width: 100%;
   height: auto;
 }
+
 main .section-trabajos div.fotos .container .overlay {
   position: absolute;
   bottom: 0;
@@ -534,6 +610,7 @@ main .section-trabajos div.fotos .container .overlay {
   height: 0;
   transition: 0.5s ease;
 }
+
 main .section-trabajos div.fotos .container .overlay .text {
   white-space: nowrap;
   color: white;
@@ -545,6 +622,7 @@ main .section-trabajos div.fotos .container .overlay .text {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
+
 main .section-trabajos a {
   padding: 5px 0 10px 0;
   display: block;
@@ -553,9 +631,11 @@ main .section-trabajos a {
   font-size: 1.4em;
   text-align: center;
 }
+
 main .section-trabajos a:hover {
   color: #c7d3e6;
 }
+
 main .section-trabajos div.separador {
   width: 100%;
   height: 1px;
@@ -572,6 +652,7 @@ main .section-trabajos div.separador {
   color: #fff;
   background-color: #030644;
 }
+
 @media (min-width: 768px) {
   .nosotros {
     width: 100%;
@@ -581,49 +662,59 @@ main .section-trabajos div.separador {
     justify-content: space-around;
   }
 }
+
 .nosotros .texto-nosotros {
   width: 100%;
   padding: 0px 10px;
   text-align: left;
 }
+
 @media (min-width: 768px) {
   .nosotros .texto-nosotros {
     width: 50%;
   }
 }
+
 .nosotros .texto-nosotros h3 {
   margin-bottom: 40px;
   font-size: 2em;
 }
+
 @media (min-width: 768px) {
   .nosotros .texto-nosotros h3 {
     margin-bottom: 20px;
   }
 }
+
 .nosotros .texto-nosotros p {
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 20px;
 }
+
 .nosotros .texto-nosotros ul {
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 20px;
 }
+
 .nosotros .texto-nosotros ul li {
   margin-bottom: 10px;
   padding-left: 3px;
   list-style-type: disc;
 }
+
 .nosotros .texto-nosotros a {
   display: inline-block;
   margin-bottom: 70px;
   color: #fff;
   text-decoration: underline;
 }
+
 @media (min-width: 768px) {
   .nosotros .texto-nosotros a {
     margin-bottom: 0;
   }
 }
+
 .nosotros .texto-nosotros a:hover {
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
@@ -631,25 +722,30 @@ main .section-trabajos div.separador {
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
 }
+
 .nosotros div {
   width: 90%;
   display: flex;
   flex-flow: row wrap;
 }
+
 @media (min-width: 768px) {
   .nosotros div {
     width: 300px;
     margin-right: 70px;
   }
 }
+
 .nosotros div img {
   width: 50%;
 }
+
 @media (min-width: 768px) {
   .nosotros div img {
     width: 150px;
   }
 }
+
 .nosotros div img:hover {
   animation-duration: 2s;
   animation-name: expandir;
@@ -680,6 +776,7 @@ main .section-trabajos div.separador {
     -o-transform: scale(1.5);
   }
 }
+
 .main_nosotros h1 {
   padding: 70px 0;
   text-align: center;
@@ -687,6 +784,7 @@ main .section-trabajos div.separador {
   font-size: 2em;
   color: #fff;
 }
+
 @media (min-width: 768px) {
   .main_nosotros h1 {
     margin-top: 50px;
@@ -696,44 +794,52 @@ main .section-trabajos div.separador {
     font-size: 3em;
   }
 }
+
 @media (min-width: 768px) {
   .main_nosotros article {
     margin: 0 200px;
   }
 }
+
 .main_nosotros article:nth-child(2) h2 {
   margin: 100px 0 50px 5px;
   padding: 5px 10px;
   border-left: 5px solid #fabe64;
   font-size: 2.1em;
 }
+
 .main_nosotros article:nth-child(2) p {
   padding: 0px 15px;
   text-align: justify;
   font-size: 1em;
 }
+
 @media (min-width: 768px) {
   .main_nosotros article:nth-child(2) p {
     margin: 50px 15px;
   }
 }
+
 .main_nosotros article:nth-child(2) div {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
+
 @media (min-width: 768px) {
   .main_nosotros article:nth-child(2) div {
     justify-content: space-around;
     flex-wrap: nowrap;
   }
 }
+
 .main_nosotros article:nth-child(2) div img {
   margin: 40px;
   order: 1;
   width: 200px;
 }
+
 @media (min-width: 768px) {
   .main_nosotros article:nth-child(2) div img {
     order: 0;
@@ -741,18 +847,22 @@ main .section-trabajos div.separador {
     width: 300px;
   }
 }
+
 .main_nosotros article:nth-child(2) div ul {
   padding: 10px 10px 10px 25px;
 }
+
 @media (min-width: 768px) {
   .main_nosotros article:nth-child(2) div ul {
     width: 60%;
   }
 }
+
 .main_nosotros article:nth-child(2) div ul li {
   list-style-type: disc;
   margin-bottom: 10px;
 }
+
 .main_nosotros article:nth-child(3) h2 {
   margin: 100px 5px 50px 0px;
   padding: 5px 10px;
@@ -760,15 +870,18 @@ main .section-trabajos div.separador {
   text-align: right;
   font-size: 1.9em;
 }
+
 @media (min-width: 768px) {
   .main_nosotros article:nth-child(3) h2 {
     margin-right: 0;
     font-size: 3em;
   }
 }
+
 .main_nosotros article:nth-child(3) div.nuestra-historia {
   margin: 50px 0;
 }
+
 @media (min-width: 768px) {
   .main_nosotros article:nth-child(3) div.nuestra-historia {
     display: flex;
@@ -776,27 +889,32 @@ main .section-trabajos div.separador {
     align-items: center;
   }
 }
+
 .main_nosotros article:nth-child(3) div.nuestra-historia p {
   margin-bottom: 20px;
   padding: 0 15px;
   text-align: justify;
 }
+
 @media (min-width: 768px) {
   .main_nosotros article:nth-child(3) div.nuestra-historia p {
     width: 45%;
     font-size: 1.2em;
   }
 }
+
 .main_nosotros article:nth-child(3) div.nuestra-historia div {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
 @media (min-width: 768px) {
   .main_nosotros article:nth-child(3) div.nuestra-historia div {
     width: 50%;
   }
 }
+
 .main_nosotros article:nth-child(3) div.nuestra-historia div img {
   margin-bottom: 10px;
   width: 150px;
@@ -812,6 +930,7 @@ main .section-trabajos div.separador {
   justify-content: center;
   text-align: center;
 }
+
 @media (min-width: 768px) {
   .ubicacion-inicio {
     flex-wrap: nowrap;
@@ -820,18 +939,22 @@ main .section-trabajos div.separador {
     text-align: left;
   }
 }
+
 .ubicacion-inicio article h3 {
   font-size: 2em;
   margin-bottom: 20px;
 }
+
 .ubicacion-inicio article p {
   margin-bottom: 50px;
 }
+
 @media (min-width: 768px) {
   .ubicacion-inicio article p {
     margin-bottom: 0;
   }
 }
+
 .ubicacion-inicio div a {
   padding: 20px 70px;
   border: 2px solid #030644;
@@ -839,6 +962,7 @@ main .section-trabajos div.separador {
   color: #030644;
   font-weight: bold;
 }
+
 .ubicacion-inicio div a:hover {
   background-color: #030644;
   color: #fff;
@@ -852,12 +976,14 @@ main .section-trabajos div.separador {
   background-size: cover;
   background-position: 40% 0%;
 }
+
 @media (min-width: 768px) {
   .beneficios article {
     background-image: url(../../img/img-separador-escritorio.png);
     background-position: 40% 50%;
   }
 }
+
 .beneficios article h3 {
   font-size: 2em;
   font-weight: bold;
@@ -865,23 +991,27 @@ main .section-trabajos div.separador {
   color: #fff;
   text-align: right;
 }
+
 @media (min-width: 768px) {
   .beneficios article h3 {
     font-size: 3.4em;
   }
 }
+
 .beneficios div#beneficios {
   margin: 50px 0;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
+
 @media (min-width: 768px) {
   .beneficios div#beneficios {
     justify-content: space-around;
     flex-wrap: nowrap;
   }
 }
+
 .beneficios div#beneficios .iconos_beneficios {
   margin: 30px 0;
   padding: 20px 0px;
@@ -890,15 +1020,18 @@ main .section-trabajos div.separador {
   flex-flow: row wrap;
   justify-content: center;
 }
+
 @media (min-width: 768px) {
   .beneficios div#beneficios .iconos_beneficios {
     width: 300px;
     padding: 20px 25px;
   }
 }
+
 .beneficios div#beneficios .iconos_beneficios i {
   font-size: 7em;
 }
+
 .beneficios div#beneficios .iconos_beneficios h5 {
   margin-top: 20px;
   width: 100%;
@@ -910,6 +1043,7 @@ main .section-trabajos div.separador {
   background-color: #eee;
   border-bottom: 5px solid #030644;
 }
+
 .catalogo a {
   padding: 40px 0;
   display: block;
@@ -917,6 +1051,7 @@ main .section-trabajos div.separador {
   font-size: 2em;
   color: #000;
 }
+
 .catalogo a:hover {
   color: #030644;
 }
@@ -925,17 +1060,20 @@ main .section-trabajos div.separador {
   margin: 50px 0px;
   text-align: center;
 }
+
 @media (min-width: 768px) {
   .contacto {
     margin: 150px 50px;
   }
 }
+
 .contacto div.titulo {
   padding: 70px 0;
   margin-top: -40px;
   margin-bottom: 10px;
   background-image: url(../../img/fondoborroso.png);
 }
+
 @media (min-width: 768px) {
   .contacto div.titulo {
     padding: 90px 0;
@@ -944,15 +1082,18 @@ main .section-trabajos div.separador {
     background-position: 50% 50%;
   }
 }
+
 .contacto div.titulo h1 {
   font-size: 2em;
   color: #fff;
 }
+
 @media (min-width: 768px) {
   .contacto div.titulo h1 {
     font-size: 3em;
   }
 }
+
 .contacto .container {
   width: 100%;
   margin-top: -50px;
@@ -965,25 +1106,30 @@ main .section-trabajos div.separador {
   -ms-transform: scale(0.9);
   -o-transform: scale(0.9);
 }
+
 @media (min-width: 768px) {
   .contacto .container {
     margin-top: 0;
     flex-wrap: nowrap;
   }
 }
+
 .contacto .container div.iframe {
   width: 100%;
   overflow: hidden;
 }
+
 @media (min-width: 768px) {
   .contacto .container div.iframe {
     width: 700px;
   }
 }
+
 .contacto .container div.iframe iframe {
   height: 800px;
   width: 100%;
 }
+
 .contacto .container div.iframe div {
   margin-top: -90px;
   margin-bottom: -150px;
@@ -993,12 +1139,14 @@ main .section-trabajos div.separador {
   -ms-transform: scale(1.4);
   -o-transform: scale(1.4);
 }
+
 @media (min-width: 768px) {
   .contacto .container div.iframe div {
     margin-top: -90px;
     margin-bottom: -100px;
   }
 }
+
 .contacto .container div.iframe div .iframe_contacto {
   height: 1100px;
   transform: scale(0.7);
@@ -1007,6 +1155,7 @@ main .section-trabajos div.separador {
   -ms-transform: scale(0.7);
   -o-transform: scale(0.7);
 }
+
 @media (min-width: 768px) {
   .contacto .container div.iframe div .iframe_contacto {
     height: 1000px;
@@ -1017,6 +1166,7 @@ footer {
   background-color: #000;
   padding: 40px 5px 40px 30px;
 }
+
 @media (min-width: 768px) {
   footer {
     padding: 20px 0;
@@ -1025,18 +1175,22 @@ footer {
     align-items: center;
   }
 }
+
 footer img {
   display: none;
 }
+
 @media (min-width: 768px) {
   footer img {
     width: 200px;
     display: inline-block;
   }
 }
+
 footer div#container {
   position: relative;
 }
+
 footer div#container div#barra_footer {
   position: absolute;
   left: -15px;
@@ -1044,24 +1198,28 @@ footer div#container div#barra_footer {
   height: 100px;
   background-color: #fff;
 }
+
 @media (min-width: 768px) {
   footer div#container div#barra_footer {
     top: 15px;
   }
 }
+
 footer div#container div.info-footer {
   margin: 10px 0;
 }
+
 footer div#container div.info-footer i {
   font-size: 1em;
   color: #fff;
 }
+
 footer div#container div.info-footer span {
   color: #fff;
 }
+
 footer div#container .copyright {
   color: #fff;
   font-size: .7em;
 }
-
 /*# sourceMappingURL=styles.css.map */
