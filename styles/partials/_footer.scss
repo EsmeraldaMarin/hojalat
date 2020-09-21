@@ -1,0 +1,46 @@
+footer {
+    background-color: #000;
+    padding: 40px 5px 40px 30px;
+    @media (min-width: $breackpoint) {
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    img{
+        display: none;
+        @media (min-width: $breackpoint) {
+            width: 200px;
+            display: inline-block;
+        }
+    }
+    div#container{
+        position: relative;
+        div#barra_footer{
+            position: absolute;
+            left: -15px;
+            width: 1px;
+            height: 100px;
+            background-color: #fff;
+            @media (min-width: $breackpoint) {
+                top: 15px;
+            }
+
+        }
+        div.info-footer {
+            margin: 10px 0;
+            i {
+                font-size: 1em;
+                color: #fff;
+            }
+            span {
+                color: #fff;
+    
+            }
+        }
+        .copyright{
+            color: #fff;
+            font-size: .7em;
+        }
+    }
+}

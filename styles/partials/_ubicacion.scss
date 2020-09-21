@@ -1,0 +1,41 @@
+.ubicacion-inicio {
+    padding: 80px 0;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #eee;
+    justify-content: center;
+    text-align: center;
+    @media (min-width: $breackpoint) {
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        text-align: left;
+    }
+    article {
+        h3 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        p{
+            margin-bottom: 50px;
+            @media (min-width: $breackpoint) {
+                margin-bottom: 0;
+            }
+
+        }
+    }
+    div {
+        a {
+            padding: 20px 70px;
+            border: 2px solid $bg-1;
+            display: inline-block;
+            color: $bg-1;
+            font-weight: bold;
+            &:hover {
+                background-color: $bg-1;
+                color: #fff;
+            }
+        }
+    }
+}
+

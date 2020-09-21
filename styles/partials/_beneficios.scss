@@ -1,0 +1,71 @@
+.beneficios {
+    article {
+        padding: 100px 30px;
+        background-image: url(../../img/img-separador.jpeg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 40% 0%;
+        @media (min-width: $breackpoint) {
+            background-image: url(../../img/img-separador-escritorio.png);
+            background-position: 40% 50%;
+        }
+        h3 {
+            font-size: 2em;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px black;
+            color: #fff;
+            text-align: right;
+            @media (min-width: $breackpoint) {
+                font-size: 3.4em;
+            }
+        }
+    }
+    div#beneficios {
+        margin: 50px 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        @media (min-width: $breackpoint) {
+            justify-content: space-around;
+            flex-wrap: nowrap;
+        }
+        .iconos_beneficios {
+            margin: 30px 0;
+            padding: 20px 0px;
+            width: 100%;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            @media (min-width: $breackpoint) {
+                width: 300px;
+                padding: 20px 25px;
+            }
+            i {
+                font-size: 7em;
+            }
+            h5 {
+                margin-top: 20px;
+                width: 100%;
+                font-size: 1.5em;
+                text-align: center;
+            }
+        }
+    }
+}
+.catalogo {
+    background-color: #eee;
+    border-bottom: 5px solid $bg-1;
+    a {
+        padding: 40px 0;
+        display: block;
+        text-align: center;
+        font-size: 2em;
+        color: #000;
+        &:hover {
+            color: $bg-1;
+
+        }
+    }
+}
+

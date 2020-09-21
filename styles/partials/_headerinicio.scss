@@ -1,0 +1,256 @@
+header {
+    #navegador {
+        min-height: 50px;
+        position: relative;
+        top: 0;
+        z-index: 1000;
+        background-color: rgba($color: #000, $alpha: 1);
+        @media (min-width: $breackpoint) {
+            width: 100%;
+            height: 70px;
+            padding: 5px 0;
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background-color: transparent;
+        }
+        a {
+            @media (min-width: $breackpoint) {
+                display: inline-block;
+                width: 120px;
+                height: 60px;
+            }
+            img {
+                position: absolute;
+                left: 10px;
+                width: 70px;
+                @media (min-width: $breackpoint) {
+                    margin-left: 20px;
+                    width: 120px;
+                    height: 60px;
+                    position: static;
+                    object-fit: cover;
+                    object-position: 50% 40%;
+                }
+            }
+        }
+
+        #cruz {
+            position: absolute;
+            opacity: 0;
+        }
+        #checkbox {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 10px;
+            right: 0;
+            opacity: 0;
+            z-index: 10;
+            cursor: pointer;
+            &:checked ~ nav {
+                display: block;
+            }
+            &:checked ~ #cruz {
+                opacity: 1;
+                z-index: 4;
+            }
+            &:checked ~ #barras {
+                opacity: 0;
+            }
+        }
+        i {
+            position: absolute;
+            top: 15px;
+            right: 10px;
+            font-size: 1.3em;
+        }
+        nav {
+            width: 40%;
+            height: 100vh;
+            position: absolute;
+            top: 50px;
+            right: 0;
+            display: none;
+            background-color: $bg-1;
+
+            @media (min-width: $breackpoint) {
+                height: 100%;
+                width: 100%;
+                margin: 0px 25px;
+                position: static;
+                display: inline-block;
+                background-color: transparent;
+            }
+            @media (min-width: $breackpoint-tablet) {
+                height: 100%;
+                width: 40%;
+                margin: 0px 25px;
+                position: static;
+                display: inline-block;
+                background-color: transparent;
+            }
+
+            ul {
+                height: 100%;
+                padding-left: 20px;
+                display: flex;
+                flex-direction: column;
+                align-content: flex-end;
+                @media (min-width: $breackpoint) {
+                    padding-left: 10px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+                li {
+                    width: 100%;
+                    margin: 20px 0px;
+                    list-style-type: none;
+                    @media (min-width: $breackpoint) {
+                        width: 50%;
+                        display: inline-block;
+                        text-align: center;
+                    }
+                    a {
+                        font-size: 1.2em;
+                        text-decoration: none;
+                        color: #fff;
+                        /* @media (min-width: $breackpoint) {
+                            color: #000;
+                        }*/
+                        &:hover {
+                            color: $bg-2;
+                            text-decoration: line-through;
+                        }
+                        &:active {
+                            color: #777;
+                        }
+                    }
+                }
+            }
+        }
+        #checkbox,
+        #cruz,
+        #barras {
+            color: #fff;
+            @media (min-width: $breackpoint) {
+                display: none;
+            }
+        }
+    }
+    .seccion-azul {
+        height: 80vh;
+        width: 100%;
+        position: relative;
+        background-color: $bg-1;
+        @media (min-width: $breackpoint) {
+            height: 90vh;
+        }
+        h2 {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            color: #fff;
+            & span:last-child,
+            & span:first-child {
+                display: block;
+            }
+            & span:nth-child(2) {
+                display: none;
+            }
+            @media (min-width: $breackpoint) {
+                flex-direction: row;
+                bottom: 65px;
+                right: 15px;
+                font-size: 3em;
+                & span:nth-child(2) {
+                    display: inline-block;
+                }
+            }
+            @media (max-width: $breackpoint-tablet) {
+                font-size: 2em;
+            }
+        }
+        p {
+            display: none;
+            @media (min-width: $breackpoint) {
+                display: inline-block;
+                position: absolute;
+                bottom: 30px;
+                right: 15px;
+                color: #fff;
+                font-size: 1em;
+            }
+            @media (max-width: $breackpoint-tablet) {
+                display: none;
+            }
+        }
+        .seccion-img {
+            height: 85vh;
+            width: 100%;
+            position: relative;
+            background-image: url(../../img/imagenfondo.jpg);
+            background-repeat: no-repeat;
+            background-position: 60% 50%;
+            background-size: cover;
+            clip-path: polygon(0 0, 100% 0, 100% 25%, 35% 100%, 0 100%);
+            @media (min-width: $breackpoint) {
+                height: 100vh;
+                background-image: url(../../img/imagenfondo-escritorio.png);
+                background-position: 20% 50%;
+            }
+            h1 {
+                padding: 5px;
+                position: absolute;
+                top: 40px;
+                left: 10px;
+                font-size: 3em;
+                color: #fff;
+                @media (min-width: $breackpoint) {
+                    top: 50%;
+                    font-size: 5em;
+                    margin-left: 20px;
+                }
+            }
+            a {
+                position: absolute;
+                bottom: 10px;
+                left: 40px;
+                display: inline-block;
+                @media (min-width: $breackpoint) {
+                    left: 15%;
+                    bottom: 20px;
+                }
+                .circulo {
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    i {
+                        font-size: 2em;
+                        color: #fff;
+                        animation-duration: 1s;
+                        animation-name: subeybaja;
+                        animation-iteration-count: infinite;
+                        animation-direction: alternate;
+                    }
+                }
+            }
+        }
+    }
+}
+@keyframes subeybaja {
+    0% {
+        margin-bottom: 70%;
+    }
+    100% {
+        margin-bottom: -70%;
+    }
+}

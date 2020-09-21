@@ -1,0 +1,77 @@
+.contacto {
+    margin: 50px 0px;
+    text-align: center;
+    @media (min-width: $breackpoint) {
+        margin: 150px 50px;
+    }
+    div.titulo{
+        padding: 70px 0;
+        margin-top: -40px;
+        margin-bottom: 10px;
+        background-image: url(../../img/fondoborroso.png);
+        @media (min-width: $breackpoint) {
+            padding: 90px 0;
+            margin: -100px -50px 30px -50px;
+            background-image: url(../../img/fondoborroso2.png);
+            background-position: 50% 50%;
+        }
+        h1 {
+            font-size: 2em;
+            color: #fff;
+            @media (min-width: $breackpoint) {
+               font-size: 3em;
+            }
+        }
+    }
+    .container {
+        width: 100%;
+        margin-top: -50px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+        -moz-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        -o-transform: scale(0.9);
+        @media (min-width: $breackpoint) {
+            margin-top: 0;
+            flex-wrap: nowrap;
+        }
+        div.iframe {
+            width: 100%;
+            overflow: hidden;
+            @media (min-width: $breackpoint) {
+                width: 700px;
+            }
+            iframe {
+                height: 800px;
+                width: 100%;
+            }
+            div {
+                margin-top: -90px;
+                margin-bottom: -150px;
+                transform: scale(1.4);
+                -webkit-transform: scale(1.4);
+                -moz-transform: scale(1.4);
+                -ms-transform: scale(1.4);
+                -o-transform: scale(1.4);
+                @media (min-width: $breackpoint) {
+                    margin-top: -90px;
+                    margin-bottom: -100px;
+                }
+                .iframe_contacto {
+                    height: 1100px;
+                    transform: scale(0.7);
+                    -webkit-transform: scale(0.7);
+                    -moz-transform: scale(0.7);
+                    -ms-transform: scale(0.7);
+                    -o-transform: scale(0.7);
+                    @media (min-width: $breackpoint) {
+                        height: 1000px;
+                    }
+                }
+            }
+        }
+    }
+}

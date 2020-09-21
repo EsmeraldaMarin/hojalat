@@ -1,0 +1,150 @@
+header {
+    #navegador-header {
+        min-height: 50px;
+        position: relative;
+        top: 0;
+        z-index: 1000;
+        background-color: rgba($color: #000, $alpha: 1);
+        @media (min-width: $breackpoint) {
+            width: 100%;
+            height: 70px;
+            padding: 5px 0;
+            position: fixed;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        a{
+            @media (min-width: $breackpoint) {
+            display: inline-block;
+            width: 120px;
+            height: 60px;
+            }
+            img {
+                position: absolute;
+                left: 10px;
+                width: 70px;
+                @media (min-width: $breackpoint) {
+                    margin-left: 20px;
+                    width: 120px;
+                    height: 60px;
+                    position: static;
+                    object-fit: cover;
+                    object-position: 50% 40%;
+                }
+            }
+        }
+
+        #cruz {
+            position: absolute;
+            opacity: 0;
+        }
+        #checkbox {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 10px;
+            right: 0;
+            opacity: 0;
+            z-index: 10;
+            cursor: pointer;
+            &:checked ~ nav {
+                display: block;
+            }
+            &:checked ~ #cruz {
+                opacity: 1;
+                z-index: 4;
+            }
+            &:checked ~ #barras {
+                opacity: 0;
+            }
+        }
+        i {
+            position: absolute;
+            top: 15px;
+            right: 10px;
+            font-size: 1.3em;
+        }
+        nav {
+            width: 40%;
+            height: 100vh;
+            position: absolute;
+            top: 50px;
+            right: 0;
+            display: none;
+            background-color: $bg-1;
+
+            @media (min-width: $breackpoint) {
+                height: 100%;
+                width: 100%;
+                margin: 0px 25px;
+                position: static;
+                display: inline-block;
+                background-color: #000;
+            }
+            @media (min-width: $breackpoint-tablet) {
+                height: 100%;
+                width: 40%;
+                margin: 0px 25px;
+                position: static;
+                display: inline-block;
+                background-color: #000;
+            }
+
+
+            ul {
+                height: 100%;
+                padding-left: 20px;
+                display: flex;
+                flex-direction: column;
+                align-content: flex-end;
+                @media (min-width: $breackpoint) {
+                    padding-left: 10px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+                li {
+                    width: 100%;
+                    margin: 20px 0px;
+                    list-style-type: none;
+                    @media (min-width: $breackpoint) {
+                        width: 50%;
+                        display: inline-block;
+                        text-align: center;
+                    }
+
+                    a {
+                        font-size: 1.2em;
+                        text-decoration: none;
+                        color: #fff;
+                        /* @media (min-width: $breackpoint) {
+                            color: #000;
+                        }*/
+                        &:hover {
+                            color: $bg-2;
+                            text-decoration: line-through;
+                        }
+                        &:active {
+                            color: #777;
+                        }
+                    }
+                }
+                .marcador{
+                    color: #777;
+                    font-size: 1.2em;
+                    text-decoration: line-through;
+                }
+            }
+        }
+        #checkbox,
+        #cruz,
+        #barras {
+            color: #fff;
+            @media (min-width: $breackpoint) {
+                display: none;
+            }
+        }
+    }
+}
